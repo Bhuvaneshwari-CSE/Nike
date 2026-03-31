@@ -1,0 +1,688 @@
+*
+{
+    padding:0;
+    margin:0 ;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* color:black; */
+    /* width: 100%; */
+}
+.container
+{
+    width: 100vw;
+    overflow: visible;
+}
+
+.help-sign_up-log_in
+{
+    /* width: 30%; */
+    height: 40px;
+    /* background-color:gainsboro; */
+    background-color: rgb(245, 245, 245);;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    font-weight:bold ;
+   }
+.help-sign_up-log_in a{
+   
+    text-decoration: none;
+    color:rgba(17,17,17,0.92);
+}
+a:first-child
+{
+  padding-right: 2%;
+  /* background-color: yellow; */
+}
+a:last-child
+{
+padding-left: 2%;
+padding-right: 3%;
+}
+a:nth-child(3)
+{
+    padding-left: 2%;
+padding-right: 2%;
+/* background-color: green; */
+}
+.new-men-women-kids-jordan 
+{
+    height: 60px;
+    width: 100%;
+    display: flex;
+   position: sticky;
+   top:0;
+    background-color:white;
+    z-index: 1;
+     font-size: 14px;
+     /* position: relative; */
+   
+   
+   
+}
+
+ .logo img
+{
+  height: 60px;
+  padding-left:50px;
+  /* margin-left: 50px; */
+  /* background-color: brown; */
+}
+
+.new-men-women-kids-jordan nav
+{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    gap:5%;
+    /* background-color: aqua; */
+    position: relative;
+
+   
+}
+.search-heart-bag
+{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:2%;
+    /* background-color: aqua; */
+}
+
+
+
+.featured-new, .featured-men, .featured-women, .featured-kids, .featured-jordan
+{
+    position: absolute;
+    /* top: 100%; */
+      left: 0;
+    width: 100vw;
+    background: white;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: aquamarine; */
+    /* padding: 30px; */
+    gap: 30px;
+}
+.new:hover .featured-new
+{
+   
+    visibility: visible;
+
+    
+}
+
+.men:hover .featured-men
+{
+  
+    visibility: visible;
+}
+.women:hover .featured-women
+{
+visibility: visible;
+}
+.kids:hover .featured-kids
+{
+   visibility: visible;
+}
+.jordan:hover .featured-jordan
+{
+    visibility: visible;
+}
+/* for underline purpose */
+.new:hover, .men:hover, .women:hover, .kids:hover, .jordan:hover
+{
+   
+   text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+/*  */
+.new h4, .men h4, .women h4, .kids h4, .jordan h4
+{
+margin-top: 30px;
+margin-bottom: 20px;
+}
+.new a, .men a, .women a, .kids a, .jordan a
+{
+  text-decoration: none;
+  color:grey
+}
+.new li, .men li, .women li, .kids li, .jordan li
+{
+    list-style-type: none;
+}
+.new{
+    /* margin-left: 300px; */
+    font-weight: 600;
+    cursor: pointer;
+}
+.men
+{
+  /* margin-left: 23px; */
+ font-weight: 600;
+ cursor: pointer;
+}
+.women 
+{
+  /* margin-left: 23px; */
+ font-weight: 600;
+cursor: pointer;
+}
+.kids 
+{
+/* margin-left: 23px; */
+ font-weight: 600;
+cursor: pointer;
+}
+.jordan 
+{
+/* margin-left: 25px; */
+ font-weight: 600;
+cursor: pointer;
+}
+.search
+{
+    height:30px;
+    width: 200px;
+    position: relative;
+    top:5%;
+
+}
+.search input {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 30px;
+    border: 2px solid grey;
+}
+
+/* icon position */
+.fa-magnifying-glass {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color:grey
+}
+
+/* placeholder hide */
+.search input:focus::placeholder {
+    color: transparent;
+}
+
+/* icon hide WITHOUT focus-within */
+/* .search input:focus + .fa-magnifying-glass {
+   display: none;
+} */
+
+.heart button
+{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    /* margin-left: 10px; */
+}
+.fa-heart
+{
+    font-size: 20px;
+    font-weight: 300;
+}
+.heart button:hover
+{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* .bag{
+    height: 40px;
+    width: 40px;
+} */
+.bag button{
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    /* margin-left: -30px; */
+}
+.fa-bag-shopping
+{
+    font-size: 20px;
+    font-weight: 300;
+}
+.bag button:hover
+{
+     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    background-color:rgb(245, 245, 245);
+    /* Text align in center */
+    display: flex;
+    align-items: center;
+    z-index: -1;
+}
+
+.text {
+    position: absolute;
+    white-space: nowrap; 
+    left: 100%;
+    transform: translateX(0%);
+   
+    /* font-size */
+    font-size: 12px;
+    font-weight: 600;
+}
+.text a
+{
+    color: black;
+}
+
+/* SAME DURATION */
+.text1 {
+    animation: slide1 10s ease-in-out infinite;
+}
+
+.text2 {
+    animation: slide2 10s ease-in-out infinite;
+}
+
+@keyframes slide1 {
+    0%   { left: 100%; }   /* start right */
+
+    /* 20%  { left: 50%; transform: translateX(-50%);}    center */
+    5%  { left: 50%; transform: translateX(-50%); }    /* stay */
+   
+     50%  { left: 50%; transform: translateX(-50%); }
+
+    55%  { left: -100%; transform: translateX(0%);}  /* smooth exit */
+    100% { left: -100%; }  /* hidden */
+}
+
+/* SECOND TEXT */
+@keyframes slide2 {
+    0%   {  left: 120%;}   /* hidden */
+
+    60%  { left: 120%; }  /*wait*/
+   
+   /* 65%  { left: 50%; transform: translateX(-50%);} */
+    62%  { left: 50%; transform: translateX(-50%);}    /* center */
+   90%  { left: 50%; transform: translateX(-50%);} 
+       /* stay */
+    95%  { left: -100%; transform: translateX(0%);} 
+    100% { left: -100%; }  /* exit */
+}
+.header
+{
+    margin-top:20px;
+    margin-bottom: 10px;
+    display: flex;
+    /* position: fixed;   
+    height: 50px;
+    top:0;
+    z-index: -1; */
+    background-color: white;
+}
+header h3
+{
+  
+    margin-left: 50px;
+}
+header p
+{
+      margin-left: 800px;
+    margin-right: 20px;
+}
+header select
+{
+    font-size: 1rem;
+}
+                           /* MAIN                      */
+.main-content
+{
+    display: flex;
+  width:100%;
+}
+aside
+{
+    height: 100vh;
+    width: 200px;
+    /* margin-top: 20px; */
+    margin-left: 30px;
+    overflow: scroll;
+    /* position: fixed;
+    top:30%; */
+    background-color: white;
+    transform-origin: top;
+    transform-origin: center;
+    /* z-index: -2; */
+    /* background-color: aqua; */
+  
+   
+}
+.sidebar
+{
+   max-height: fit-content;    
+   position: sticky; 
+    top:30%;
+    /* overflow-y: auto;    */
+}
+.sidebar > p
+{
+    margin-bottom: 10px;
+}
+.reset button
+{
+    margin-top: 10px;
+    padding:10px 70px;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: 1px solid whitesmoke;
+
+}
+/* Gender container */
+.gender, .size, .price, .brand, .discount, .colour, .product-label, .sports, .height, .width, .pack, .surface, .cushioning, .collections, .technology, .material, .best, .shoe-feel, .run-type, .cushioning-type, .benefits, .closure, .athletes, .features
+{
+    margin-top: 30px;
+   /* padding-top: 20px; */
+    width: 100%;
+    cursor: pointer;
+}
+
+/* icon spacing */
+.gender i 
+{
+    margin-left: 50px;
+}
+.size i
+{
+    margin-left:73px;
+}
+.price i
+{
+    margin-left: 68px;
+}
+.brand i
+{
+    margin-left: 61px;
+}
+.discount i
+{
+    margin-left: 43px;
+}
+.product-label i
+{
+    margin-left:7px;
+}
+.colour i
+{
+    margin-left: 60px;
+}
+.sports i
+{
+    margin-left: 60px;
+}
+.height i
+{
+    margin-left: 20px;
+}
+.width i
+{
+    margin-left: 68px;
+}
+.pack i
+{
+margin-left: 38px;
+}
+.surface i
+{
+    margin-left: 55px;
+}
+.cushioning i
+{
+    margin-left: 30px;
+}
+.collections i
+{
+    margin-left: 30px;
+}
+.technology i
+{
+    margin-left: 30px;
+}
+.material i
+{
+    margin-left: 50px;
+}
+.best i
+{
+    margin-left: 50px;
+}
+.shoe-feel i{
+    margin-left: 35px;
+}
+.run-type i
+{
+    margin-left: 39px;
+}
+.benefits i
+{
+    margin-left: 50px;
+}
+.closure i
+{
+   margin-left: 50px;
+}
+.athletes i
+{
+    margin-left: 45px;
+}
+.features i
+{
+    margin-left: 40px;
+}
+/* hidden by default */
+.gender-value, .size-value, .price-value, .brand-value, .discount-value, .colour-value, .product-label-value, .sports-value, .height-value, .width-value, .pack-value, .surface-value, .cushioning-value, .collections-value, .technology-value, .material-value, .best-value, .shoe-feel-value, .run-type-value, .cushioning-type-value, .benefits-value, .closure-value, .athletes-value, .features-value
+{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+/* hover panna expand aagum */
+.gender:active .gender-value, .size:active .size-value, .price:active .price-value, .brand:active .brand-value, .discount:active .discount-value, .colour:active .colour-value, .product-label:hover .product-label-value, .sports:hover .sports-value, .height:hover .height-value, .width:hover .width-value, .pack:hover .pack-value, .surface:hover .surface-value, .cushioning:hover .cushioning-value, .collections:hover .collections-value, .technology:hover .technology-value, .material:hover .material-value, .best:hover .best-value, .shoe-feel:hover .shoe-feel-value, .run-type:hover .run-type-value, .cushioning-type:hover .cushioning-type-value, .benefits:hover .benefits-value, .closure:hover .closure-value, .athletes:hover .athletes-value, .features:hover .features-value
+{
+    transition: 3s;
+    
+    max-height: 200px; /* adjust if needed */
+    max-width: 200px;
+    opacity: 1;
+}
+.colour-value 
+{
+    display: flex;
+    
+}
+ .blue button
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    border:1px solid blue;
+    margin-right: 10px;
+}
+.colour-value ~ label
+{
+display: block;
+margin-right: 10px;
+}
+.yellow button
+{
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color:yellow;
+    border: 1px solid yellow;
+    margin-right:20px;
+}
+.purple button
+{
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color:purple;
+    border: 1px solid purple;
+    margin-right:20px;
+}
+
+
+
+.gender-value input,.brand-value input, .discount-value input, .product-label-value input, .sports-value input, .height-value input
+{
+margin-right: 20px;
+}
+
+/* checkbox spacing */
+.gender-value label, .sports-value label, .height-value label
+ {
+    /* display: block; */
+    margin: 5px 0;
+}
+/* identify */
+ .size-value button
+{
+    padding:10px;
+    
+} 
+.price-value .input, .price-value .input-2
+{
+    margin-top: 20px;
+    height:50px ;
+    width: 200px;
+    position: relative;
+}
+.input input, .input-2 input
+{
+  
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid whitesmoke;
+    
+}
+.input label, .input-2 label{
+    position: absolute;
+    left: 12px;
+    top:10px;
+    /* bottom:10px; */
+    font-size: small;
+  
+transition: 0.3s;
+    background: white;
+    padding: 0 5px;
+}
+input:focus + label
+
+{
+    top: -8px;
+    font-size: 12px;
+    color: black;
+}
+
+
+ main
+{
+    flex: 1;
+    
+} 
+.content
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100vh;
+    overflow-y: auto;
+  
+}
+.shoe {
+    width: calc(33.33% - 20px);
+    font-family: sans-serif;
+}
+
+.shoe img {
+    width: 100%;
+  
+}
+
+/* 🔻 DETAILS */
+.details {
+    padding: 10px 10px;
+}
+
+/* Just In */
+.tag {
+    color: red;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Title */
+.title {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Description */
+.desc {
+    color: gray;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Price */
+.prices {
+    font-weight: bold;
+   
+}
+
+/* Old Price */
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 5px;
+    font-weight: normal;
+}
+.footer {
+    padding: 20px;
+    /* background: #111; */
+    
+    color:grey;
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color:grey;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color:grey;
+}

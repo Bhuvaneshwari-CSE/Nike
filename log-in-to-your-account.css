@@ -1,0 +1,114 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.logo img
+{
+   height: 70px;
+   width: 70px;
+}
+.log-in-box
+{
+width:450px;
+height: 450px;
+margin: 30px auto;
+text-align: center;
+border:1px solid gray;
+/* background-color: yellow; */
+}
+a .fa-arrow-left-long
+{
+   margin-top: 50px;
+   margin-right:80%;
+   
+   
+}
+.log-in-box a
+{
+    color:black;
+}
+.log-in-box img
+{
+    height:70px;
+    width: 70px;
+   margin-top:20px;
+   
+}
+.main-box h3
+{
+    margin-top:5px;
+    margin-bottom: 10px;
+    font-weight: 560;
+}
+.main-box p
+{
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 300px;
+    margin: auto;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #999;
+    outline: none;
+    font-size: 14px;
+    border-radius: 10px;
+
+}
+
+.input-box label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: gray;
+    font-size: 14px;
+    transition: 0.3s;
+    background: white;
+    padding: 0 5px;
+}
+
+/* when click or type */
+.input-box input:focus + label,
+.input-box input:valid + label 
+{
+    top: -8px;
+    font-size: 12px;
+    color: black;
+}
+.get-otp button
+{
+   margin-top: 30px;
+   padding:10px 120px 10px 120px;
+   border-radius: 20px;
+   background-color: rgba(112, 110, 110,0.5);
+   border: 1px solid grey;
+   font-size: 16px;
+   opacity:0.5;
+}
+.terms-and-conditions
+{
+    font-size: 15px;
+}
+.terms-and-conditions p
+{
+   margin-top: 20px;
+   margin-bottom: 2px;
+   color: gray;
+}
+.terms-and-conditions a
+{
+    margin-top: -40px;
+}
+.terms-and-conditions span
+{
+    color:gray;
+}

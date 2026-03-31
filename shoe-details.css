@@ -1,0 +1,365 @@
+*
+{
+    padding:0;
+    margin:0 ;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* color:black; */
+    /* width: 100%; */
+}
+.container
+{
+    width: 100vw;
+    overflow: visible;
+}
+
+.help-sign_up-log_in
+{
+    /* width: 30%; */
+    height: 40px;
+    /* background-color:gainsboro; */
+    background-color: rgb(245, 245, 245);;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    font-weight:bold ;
+   }
+.help-sign_up-log_in a{
+   
+    text-decoration: none;
+    color:rgba(17,17,17,0.92);
+}
+a:first-child
+{
+  padding-right: 2%;
+  /* background-color: yellow; */
+}
+a:last-child
+{
+padding-left: 2%;
+padding-right: 3%;
+}
+a:nth-child(3)
+{
+    padding-left: 2%;
+padding-right: 2%;
+/* background-color: green; */
+}
+.new-men-women-kids-jordan 
+{
+    height: 60px;
+    width: 100%;
+    display: flex;
+   position: sticky;
+   top:0;
+    background-color:white;
+    z-index: 1;
+     font-size: 14px;
+     /* position: relative; */
+   
+   
+   
+}
+
+ .logo img
+{
+  height: 60px;
+  padding-left:50px;
+  /* margin-left: 50px; */
+  /* background-color: brown; */
+}
+
+.new-men-women-kids-jordan nav
+{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    gap:5%;
+    /* background-color: aqua; */
+    position: relative;
+
+   
+}
+.search-heart-bag
+{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:2%;
+    /* background-color: aqua; */
+}
+
+
+
+.featured-new, .featured-men, .featured-women, .featured-kids, .featured-jordan
+{
+    position: absolute;
+    /* top: 100%; */
+      left: 0;
+    width: 100vw;
+    background: white;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: aquamarine; */
+    /* padding: 30px; */
+    gap: 30px;
+}
+.new:hover .featured-new
+{
+   
+    visibility: visible;
+
+    
+}
+
+.men:hover .featured-men
+{
+  
+    visibility: visible;
+}
+.women:hover .featured-women
+{
+visibility: visible;
+}
+.kids:hover .featured-kids
+{
+   visibility: visible;
+}
+.jordan:hover .featured-jordan
+{
+    visibility: visible;
+}
+/* for underline purpose */
+.new:hover, .men:hover, .women:hover, .kids:hover, .jordan:hover
+{
+   
+   text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+/*  */
+.new h4, .men h4, .women h4, .kids h4, .jordan h4
+{
+margin-top: 30px;
+margin-bottom: 20px;
+}
+.new a, .men a, .women a, .kids a, .jordan a
+{
+  text-decoration: none;
+  color:grey
+}
+.new li, .men li, .women li, .kids li, .jordan li
+{
+    list-style-type: none;
+}
+.new{
+    /* margin-left: 300px; */
+    font-weight: 600;
+    cursor: pointer;
+}
+.men
+{
+  /* margin-left: 23px; */
+ font-weight: 600;
+ cursor: pointer;
+}
+.women 
+{
+  /* margin-left: 23px; */
+ font-weight: 600;
+cursor: pointer;
+}
+.kids 
+{
+/* margin-left: 23px; */
+ font-weight: 600;
+cursor: pointer;
+}
+.jordan 
+{
+/* margin-left: 25px; */
+ font-weight: 600;
+cursor: pointer;
+}
+.search
+{
+    height:30px;
+    width: 200px;
+    position: relative;
+    top:5%;
+
+}
+.search input {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 30px;
+    border: 2px solid grey;
+}
+
+/* icon position */
+.fa-magnifying-glass {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color:grey
+}
+
+/* placeholder hide */
+.search input:focus::placeholder {
+    color: transparent;
+}
+
+/* icon hide WITHOUT focus-within */
+/* .search input:focus + .fa-magnifying-glass {
+   display: none;
+} */
+
+.heart button
+{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    /* margin-left: 10px; */
+}
+.fa-heart
+{
+    font-size: 20px;
+    font-weight: 300;
+}
+.heart button:hover
+{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* .bag{
+    height: 40px;
+    width: 40px;
+} */
+.bag button{
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    /* margin-left: -30px; */
+}
+.fa-bag-shopping
+{
+    font-size: 20px;
+    font-weight: 300;
+}
+.bag button:hover
+{
+     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    background-color:rgb(245, 245, 245);
+    /* Text align in center */
+    display: flex;
+    align-items: center;
+    z-index: -1;
+}
+
+.text {
+    position: absolute;
+    white-space: nowrap; 
+    left: 100%;
+    transform: translateX(0%);
+   
+    /* font-size */
+    font-size: 12px;
+    font-weight: 600;
+}
+.text a
+{
+    color: black;
+}
+
+/* SAME DURATION */
+.text1 {
+    animation: slide1 10s ease-in-out infinite;
+}
+
+.text2 {
+    animation: slide2 10s ease-in-out infinite;
+}
+
+@keyframes slide1 {
+    0%   { left: 100%; }   /* start right */
+
+    /* 20%  { left: 50%; transform: translateX(-50%);}    center */
+    5%  { left: 50%; transform: translateX(-50%); }    /* stay */
+   
+     50%  { left: 50%; transform: translateX(-50%); }
+
+    55%  { left: -100%; transform: translateX(0%);}  /* smooth exit */
+    100% { left: -100%; }  /* hidden */
+}
+
+/* SECOND TEXT */
+@keyframes slide2 {
+    0%   {  left: 120%;}   /* hidden */
+
+    60%  { left: 120%; }  /*wait*/
+   
+   /* 65%  { left: 50%; transform: translateX(-50%);} */
+    62%  { left: 50%; transform: translateX(-50%);}    /* center */
+   90%  { left: 50%; transform: translateX(-50%);} 
+       /* stay */
+    95%  { left: -100%; transform: translateX(0%);} 
+    100% { left: -100%; }  /* exit */
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+   background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
+    height: 100vh;
+}
+
+
+.image-box {
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.image-box img {
+    padding-left: 100px;
+   
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+
+.image-box:hover img 
+{
+    transform: scale(1.15);
+}
+.image-details
+{
+    height: 400px;
+    
+} */
